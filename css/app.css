@@ -1,0 +1,144 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0 !important;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #EEEEEE;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.font-estetik {
+    font-family: 'Parisienne', cursive !important;
+    color: #EAD196 !important;
+}
+.font-estetik2 {
+    font-family: 'Parisienne', cursive !important;
+    color: #ffffff !important;
+}
+.d-inline {
+    color: #ffffff !important;
+}
+
+.cropper {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #EAD196 !important;
+}
+
+.cropper-1 {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10%;
+    border: 1px solid #EAD196 !important;
+}
+
+.cropper>img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.btn-music {
+    position: fixed;
+    bottom: 9vh;
+    right: 2vh;
+    z-index: 1055;
+}
+.btn {
+    color: #EAD196;
+    border-color: #ffffff;
+}
+
+.btn-udg {
+    color: #EAD196;
+    border-color: #ffffff;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #45474B;
+    z-index: 1056 !important;
+}
+
+.card-body {
+    overflow-wrap: break-word !important;
+}
+
+.mousey {
+    padding: 0.25rem 0.625rem;
+    height: 2rem;
+    border: 0.1rem solid #ffffff;
+    border-radius: 1.4rem;
+    opacity: 0.75;
+    box-sizing: content-box;
+    border: 1px solid #8E1616 !important;
+}
+
+.scroller {
+    width: 0.25rem;
+    height: 0.625rem;
+    border-radius: 25%;
+    background-color: #000000;
+    animation-name: scroll;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+/*========== PETA ===========/ */
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 255px;
+    margin-bottom: 15px;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 255px;
+  }
+  .gmap_iframe {
+    height: 255px !important;
+  }
+  .youtube_iframe {
+    height: 255px !important;
+  }
